@@ -10,7 +10,6 @@ dist/
 # C# Exclusions
 .vs/
 _ReSharper*/
-bin/
 obj/
 *.suo
 *.user
