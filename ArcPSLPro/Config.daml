@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="ArcPSLPro.dll"
+        defaultNamespace="ArcPSLPro"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{3346444A-EF11-45B6-B7D2-F4B33DCB17C6}" version="1.0" desktopVersion="3.5.57366">
+    <Name>ArcPSLPro</Name>
+    <Description>ArcPSL Pro — a popular seasonal geospatial desktop application made with warm autumn spices, steamed milk, and espresso.</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>FeralCatColonist</Author>
+    <Date>9/21/2026</Date>
+    <Subject>Framework</Subject>
+  </AddInInfo>
+
+  <Configuration appName="ArcPSL Pro">
+    <ConfigurationManager className="ArcPSLPro.Configuration.ArcPSLProConfigurationManager"/>
+  </Configuration>
+
+</ArcGIS>

@@ -1,0 +1,61 @@
+<Window x:Class="ArcPSLPro.UI.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize" Topmost="False" ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Background="#3D2000"
+        Width="960" Height="540">
+  <Window.Triggers>
+    <EventTrigger RoutedEvent="Window.Loaded">
+      <BeginStoryboard>
+        <Storyboard RepeatBehavior="Forever">
+          <DoubleAnimation Storyboard.TargetName="Dot1"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.25" To="1.0" Duration="0:0:0.5"
+                           AutoReverse="True" BeginTime="0:0:0"/>
+          <DoubleAnimation Storyboard.TargetName="Dot2"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.25" To="1.0" Duration="0:0:0.5"
+                           AutoReverse="True" BeginTime="0:0:0.2"/>
+          <DoubleAnimation Storyboard.TargetName="Dot3"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.25" To="1.0" Duration="0:0:0.5"
+                           AutoReverse="True" BeginTime="0:0:0.4"/>
+          <DoubleAnimation Storyboard.TargetName="Dot4"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.25" To="1.0" Duration="0:0:0.5"
+                           AutoReverse="True" BeginTime="0:0:0.6"/>
+          <DoubleAnimation Storyboard.TargetName="Dot5"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.25" To="1.0" Duration="0:0:0.5"
+                           AutoReverse="True" BeginTime="0:0:0.8"/>
+        </Storyboard>
+      </BeginStoryboard>
+    </EventTrigger>
+  </Window.Triggers>
+
+  <Border Background="#3D2000">
+    <Border.Clip>
+      <RectangleGeometry Rect="0,0,960,540" RadiusX="12" RadiusY="12"/>
+    </Border.Clip>
+    <Grid>
+      <Grid.Background>
+        <ImageBrush ImageSource="../Images/splash.jpg" Stretch="UniformToFill"/>
+      </Grid.Background>
+
+      <!-- Initializing label + pulsating autumn dots -->
+      <StackPanel Orientation="Horizontal"
+                  HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                  Margin="650,0,0,200">
+        <TextBlock Text="Initializing"
+                   Foreground="#F7E7D0" FontSize="16" FontStyle="Italic"
+                   VerticalAlignment="Center" Margin="0,0,14,0"/>
+        <Ellipse x:Name="Dot1" Width="11" Height="11" Fill="#F2DDBB" Opacity="0.25" Margin="5,0"/>
+        <Ellipse x:Name="Dot2" Width="11" Height="11" Fill="#E6A84A" Opacity="0.25" Margin="5,0"/>
+        <Ellipse x:Name="Dot3" Width="11" Height="11" Fill="#DA8F4A" Opacity="0.25" Margin="5,0"/>
+        <Ellipse x:Name="Dot4" Width="11" Height="11" Fill="#C46A28" Opacity="0.25" Margin="5,0"/>
+        <Ellipse x:Name="Dot5" Width="11" Height="11" Fill="#A84E10" Opacity="0.25" Margin="5,0"/>
+      </StackPanel>
+    </Grid>
+  </Border>
+</Window>

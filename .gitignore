@@ -14,7 +14,6 @@ bin/
 obj/
 *.suo
 *.user
-*.sln
 
 # Compiled Java class files
 *.class
